@@ -10,6 +10,7 @@
 		145AB4D8183C2B89007A1FDC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AB4D7183C2B89007A1FDC /* main.cpp */; };
 		145AB4DA183C2B89007A1FDC /* Gomoku.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 145AB4D9183C2B89007A1FDC /* Gomoku.1 */; };
 		145AB4E2183C3158007A1FDC /* gomo_board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 145AB4E0183C3158007A1FDC /* gomo_board.cpp */; };
+		14A1D4A2185248DA00ABCDC0 /* gomo_stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A1D4A0185248DA00ABCDC0 /* gomo_stack.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		145AB4D9183C2B89007A1FDC /* Gomoku.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Gomoku.1; sourceTree = "<group>"; };
 		145AB4E0183C3158007A1FDC /* gomo_board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gomo_board.cpp; sourceTree = "<group>"; };
 		145AB4E1183C3158007A1FDC /* gomo_board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gomo_board.h; sourceTree = "<group>"; };
+		14A1D4A0185248DA00ABCDC0 /* gomo_stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gomo_stack.cpp; path = ../gomo_stack.cpp; sourceTree = "<group>"; };
+		14A1D4A1185248DA00ABCDC0 /* gomo_stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gomo_stack.h; path = ../gomo_stack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				145AB4D7183C2B89007A1FDC /* main.cpp */,
-				145AB4D9183C2B89007A1FDC /* Gomoku.1 */,
 				145AB4E0183C3158007A1FDC /* gomo_board.cpp */,
 				145AB4E1183C3158007A1FDC /* gomo_board.h */,
+				14A1D4A0185248DA00ABCDC0 /* gomo_stack.cpp */,
+				14A1D4A1185248DA00ABCDC0 /* gomo_stack.h */,
+				145AB4D9183C2B89007A1FDC /* Gomoku.1 */,
 			);
 			path = Gomoku;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A1D4A2185248DA00ABCDC0 /* gomo_stack.cpp in Sources */,
 				145AB4E2183C3158007A1FDC /* gomo_board.cpp in Sources */,
 				145AB4D8183C2B89007A1FDC /* main.cpp in Sources */,
 			);
@@ -135,7 +141,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -146,7 +152,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -172,7 +178,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -185,7 +191,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -231,6 +237,7 @@
 				145AB4DF183C2B89007A1FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
